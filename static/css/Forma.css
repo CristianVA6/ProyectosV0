@@ -1,0 +1,37 @@
+html,body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.container {
+  height: 100%;
+  margin: 0;
+  background-color: aqua;
+}
+.GrupoIzB {
+  height: 100vh;
+  width: 70px;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+.ColGraficador{
+  background-color: #212529f3;
+}
+.navbar{
+  background-image: linear-gradient(to top, #212529, #23313b, #213f4c, #184d5b, #005c69);
+}
+
+#cnv {
+  margin: 20px;
+  padding: 10px;
+  border: 4px solid rgb(0, 0, 0);
+  width: 97%;
+  height: 87.5%;
+}

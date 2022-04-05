@@ -1,0 +1,41 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #4b1248;
+}
+.Graficas {
+  width: 100%;
+  height: 100%;
+}
+.Grafica1 {
+  width: 90%;
+  padding: 2%;
+  margin: 10px 10%;
+}
+.Grafica2 {
+  width: 90%;
+  padding: 2%;
+  margin: auto 10%;
+}
+.Grafica3 {
+  width: 90%;
+  margin: 3% 20%;
+}
+
+.ColorCanvas {
+  background-image: linear-gradient(
+    to left bottom,
+    #f0c27b,
+    #d98b65,
+    #b5595a,
+    #853053,
+    #4b1248
+  );
+  height: 60px;
+  color: white;
+}
+.offcanvas {
+  background-color: #d98b65;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static './css/styles.css' %}">
+    <link rel="stylesheet" href="{% static './css/color&forma.css' %}">
+    <link rel="stylesheet" href="{% static './css/botones.css' %}">
+    <title>Logica Difusa</title>
+</head>
+
+<body>
+    <header class="navbar navbar-light ColorCanvas shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">
+                <img src="{% static './imagenes/Logica/lavado-de-autos.png' %}" width="30" height="24"
+                    class="d-inline-block align-text-top ">
+                LOGICA DIFUSA
+            </a>
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"><img
+                    src="{% static './imagenes/Logica/boton-de-menu-de-tres-lineas-horizontales.png' %}"
+                    width="30"></button>
+        </div>
+    </header>
+    <div class="container-fliud">
+        <div class="col-12 Grafica1 text-center">
+            <img class="img1" src="{% static './imagenes/Logica/base.png' %}">
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset btnCerrar" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            <h5 id="offcanvasRightLabel" class="text-light">Parametros</h5>
+        </div>
+
+        <form action="{% url 'Logica:p1' %}" method="GET">
+            <div class="offcanvas-body "></div>
+            <span class="input-group-text ColorInput" id="inputGroup-sizing-default">ingrese texto: </span>
+            <div class="input-group mb-3 ">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="CV" id="CV">Una persona de 25 años, tiene una habilidad del 50% al manejar por lo que se requiere saber su riesgo financiero.</textarea>
+            </div>
+
+            <button class="btn btn-siguiente mb-3" type="submit">Button</button>
+    </div>
+    </form>
+
+    </div>
+
+    <script src="{% static './js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static './js/bootstrap.bundle.min.js' %}"></script>
+</body>
+
+</html>

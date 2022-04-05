@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opcion</title>
+    <link rel="stylesheet" href="{% static './css/homeC.css' %}">
+    <link rel="stylesheet" href="{% static './css/styles.css' %}">
+    <link rel="stylesheet" href="{% static './css/burbujas.css' %}">
+</head>
+
+<body>
+    <div class="burbujas">
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+    </div>
+    <div class="vh-100 row m-0 text-center align-items-center justify-content-center">
+        <div class="col-auto text-center">
+            <div class="btn-group me-2" role="group" aria-label="Second group">
+                
+                <form action="{% url 'Menu:Logica' %}">
+                    <button class="btn-grad" type="submit">Logica Difusa</button>
+                </form>          
+                <form action="{% url 'Menu:Grafica' %}">
+                    <button class="btn-grad" type="submit">Taller de Graficacion</button>
+                </form>
+                
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

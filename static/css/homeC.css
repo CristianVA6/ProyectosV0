@@ -1,0 +1,47 @@
+body {
+  background-image: radial-gradient(
+    circle,
+    #3a1c71,
+    #34297b,
+    #2d3584,
+    #25408b,
+    #1d4a92,
+    #0e569a,
+    #0062a0,
+    #006da5,
+    #007ca8,
+    #008999,
+    #00937c,
+    #159957
+  );
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #159957 0%,
+    #155799 51%,
+    #159957 100%
+  );
+}
+.btn-grad {
+  margin: 7px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.301);
+  border-radius: 10px;
+  display: block;
+  border: 0;
+  height: 200px;
+  width: 200px;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}

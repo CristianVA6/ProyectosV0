@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Botones.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Forma.css' %}">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand"> <img src="{% static 'imagenes/grafico (1).png' %}" width="25"> GRAFICADOR</a>
+            <!-- Boton | Abrir opciones -->
+            <button id=BtnMas class="btn btn-light btnMas" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></button>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="col col-2 GrupoIzB bg-dark">
+            <div class="GrupoB ">
+                <!-- Boton | Vista estandar -->
+                <button id=btnVistaEst class="btn btn-light btnVistaEst" onclick="Home()"></button>
+                <!-- Boton | pantalla pantalla completa -->
+                <button id=PCompleta class="btn btn-light btnPCompleta "
+                    onclick="launchFullScreen(document.documentElement); cancelFullScreen();"></button>
+            </div>
+        </div>
+        <div class="col ColGraficador">
+            <!-- Aqui va la grafica :D -->
+            <canvas id="cnv"></canvas>
+            <script src="{% static 'js/f.js' %}"></script>
+        </div> 
+    </div>
+
+    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset btnCerrar" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- Input | Rango-->
+            <div class="input-group mb-3 ">
+                <span class="input-group-text ColorInput">Rangos:</span>
+                <input type="text" aria-label="First name" class="form-control" id="Min" value="-4">
+                <input type="text" aria-label="Last name" class="form-control" id="Max" value="4">
+            </div>
+            <!-- Input | Ingresar funcion-->
+            <div class="input-group mb-3">
+                <span class="input-group-text ColorInput" id="inputGroup-sizing-default">Funcion:</span>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default" id="F">
+            </div>
+            <!-- Boton | Graficar-->
+            <div class="d-grid gap-2 mb-3">
+                <button class="btn-graficar ColorInput" type="button" onclick="Dfunciones()">Graficar</button>
+            </div>
+            <!--    Switch | Cuadricula-->
+            <div class="form-check">
+                <input class="form-check-input btn-outline-dark bg-dark checkColor" type="checkbox" value="" id="defaultCheck1" onclick="Cuadricula()">
+                <label class="form-check-label text-light" for="defaultCheck1">
+                    Cuadricula visible
+                </label>
+            </div>
+        </div>
+
+        <!--Script-->
+        <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'js/Boton_pantallaCompleta.js' %}"></script>
+</body>
+
+</html>

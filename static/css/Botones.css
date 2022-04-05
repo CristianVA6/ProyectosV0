@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+}
+.btnPCompleta {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 0px 5px 87px 5px;
+  justify-content: center;
+  background-image: linear-gradient(
+    to top,
+    #212529,
+    #23313b,
+    #213f4c,
+    #184d5b,
+    #005c69
+  );
+}
+#PCompleta {
+  background-image: url("../imagenes/pantalla-completa.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+}
+#PCompleta:hover {
+  background-image: url("../imagenes/minimizar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+}
+.btnMas {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  justify-content: center;
+}
+#BtnMas {
+  background-image: url("../imagenes/elipsis-de-tres-puntos.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+}
+#BtnMas:hover {
+  background-image: url("../imagenes/mas.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+}
+.btnVistaEst {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 0px 5px 12px 5px;
+  justify-content: center;
+}
+#btnVistaEst {
+  background-image: url("../imagenes/casa.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+}
+#btnVistaEst:hover {
+  background-image: url("../imagenes/casa\ \(1\).png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+}
+.imgHo {
+  width: 25px;
+  min-width: 15px;
+}
+.btnCerrar {
+  background-color: white;
+}
+.ColorInput {
+  background-image: linear-gradient(to right top, #213f4c, #184d5b, #005c69);
+  color: white;
+  border: 0;
+}
+.checkColor{
+  background-image: linear-gradient(to right top,  #184d5b, #005c69);
+  color: white;
+  border: 0;
+}
+
+.btn-graficar {
+  background-image: linear-gradient(
+    to right,
+    #005c69 0%,
+    #2c3e50 51%,
+    #005c69 100%
+  );
+}
+.btn-graficar {
+  padding: 10px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0;
+}
+.btn-graficar:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
